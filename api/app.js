@@ -1,10 +1,10 @@
-const { Delivery, Truck, Cargo, Driver } = require('./models');
+const { Delivery, Truck, Cargo, Driver } = require('../models');
 const { Op } = require('sequelize');
-const { isDestinationInNordeste, getNordesteState, regioesNordeste } = require('./utils/validateDestination');
+const { isDestinationInNordeste, getNordesteState, regioesNordeste } = require('../utils/validateDestination');
 
 require('dotenv').config();
 const express = require('express');
-const db = require('./models');
+const db = require('../models');
 const cors = require('cors');
 
 const app = express();
